@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html> <!--mendefinisikan sebuah dokumen html-->
+    <head> <!--mendifinisikan isi atau badan sebuah dokumen html-->
+        <title>Praktikum 2</title> <!--digunakan untuk membuat judul dari sebuah halaman-->
+	    <style type="text/css"> header, section, footer, aside, nav, article, figure, figcaption {display: block;}
+		    .body {
+		        color: #666666;
+			    background-color: #f9f8f6;
+			    background-position: center;
+			    font-family: Georgia, Times, serif;
+			    line-height: 1.4em;
+			    margin: 0px;}
+		    .wrapper {
+			    width: 940px;
+			    margin: 20px auto 20px auto;
+			    border: 2px solid #000000;
+			    background-color: #ffffff;}
+		    header { <!--untuk membuat sebuah header pada dokumen-->
+			    height: 160px;
+			    background-image: url(http://www.nyekrip.com/wp-content/uploads/2015/custom/images/header.png);}
+		    h1 { <!--tag untuk membuat heading-->
+			    text-indent: -9999px;
+			    width: 940px;
+			    height: 130px;
+			    margin: 0px;}
+		    nav, footer {
+			    clear: both;
+			    color: #ffffff;
+			    background-color: #aeaca8;
+			    height: 30px;}
+		    nav ul {
+			    margin: 0px;
+			    padding: 5px 0px 5px 30px;}
+		    nav li {
+			    display: inline;
+			    margin-right: 40px;}
+		    nav li a {
+			    color: #ffffff;}
+		    nav li a:hover, nav li a.current {
+				color: #000000;}
+			section.courses {
+				float: left;
+				width: 659px;
+				border-right: 1px solid #eeeeee;}
+			article {
+				clear: both;
+				overflow: auto;
+				width: 100%;}
+			hgroup {
+				margin-top: 40px;}
+			figure {
+				float: left;
+				width: 290px;
+				height: 220px;
+				padding: 5px;
+				margin: 20px;
+				border: 1px solid #eeeeee;}
+			figcaption {
+				font-size: 90%;
+				text-align: left;}
+			aside {
+				width: 230px;
+				float: left;
+				padding: 0px 0px 0px 20px;}
+			aside section a {
+				display: block;
+				padding: 10px;
+				border-bottom: 1px solid #eeeeee;}
+			aside section a:hover {
+				color: #985d6a;
+				background-color: #efefef;}
+			a {
+				color: #de6581;
+				text-decoration: none;}
+			h1, h2, h3 {
+				font-weight: normal;}
+			h2 {
+				margin: 10px 0px 5px 0px;
+				padding: 0px;}
+			h3 {
+				margin: 0px 0px 10px 0px;
+				color: #de6581;}
+			aside h2 {
+				padding: 30px 0px 10px 0px;
+				color: #de6581;}
+			footer {
+				font-size: 80%;
+				padding: 7px 0px 0px 20px;}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1>WarungKu</h1>
+				<nav> <!--tag untuk membuat navigasi link-->
+					<ul> <!--tag untuk membuat daftar dengan selain nomor-->
+						<li><a href="#" class="current">beranda</a></li>
+						<li><a href="#">daftar masakan</a></li>
+						<li><a href="#">katering</a></li>
+						<li><a href="#">tentang</a></li>
+						<li><a href="#">kontak</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section class="courses">
+				<article> <!--tag untuk membuat artikel-->
+					<figure> <!--tag untuk menentukan konten mandiri-->
+						<img src="assets/img/soto.jpg">
+						<figcaption>Soto Ayam</figcaption>
+					</figure>
+					<hgroup> <!--tag untuk pengkelompokan elmen heading-->
+						<h2>Soto Ayam</h2>
+						<h3>Makanan Berkuah</h3>
+					</hgroup>
+					<p>Soto ayam adalah makanan khas Indonesia yang berupa sejenis sup ayam dengan kuah yang berwarna kekuningan.</p>
+				</article>    
+				<article>
+					<figure>
+						<img src="assets/img/pecel2.jpg" alt="pecel" />
+						<figcaption>Pecel Indonesia</figcaption>
+					</figure>
+					<hgroup>
+						<h2>Masakan Pecel</h2>
+						<h3>Makanan dengan Bumbu Kacang</h3>
+					</hgroup>
+					<p>Pecel adalah makanan yang menggunakan bumbu sambal kacang sebagai bahan utamanya yang dicampur dengan aneka jenis sayuran.</p>
+				</article>  
+				<article>
+					<figure>
+						<img src="assets/img/mendoan.jpg" alt="pecel" />
+						<figcaption>Mendoan Indonesia</figcaption> <!--tag untuk membuat caption pada element-->
+					</figure>
+					<hgroup>
+						<h2>Mendoan</h2>
+						<h3>Makanan dengan Sambal Kecap</h3>
+					</hgroup>
+					<p>Mendoan Adalah makanan sejenis gorengan yang berasal dari wilayah Karesidenan Banyumas, Jawa Tengah. 
+					Kata "mendoan" dianggap berasal dari Bahasa Banyumasan yaitu mendo yang berarti setengah matang atau lembek.</p>
+				</article>  
+				<article>
+					<figure>
+						<img src="assets/img/sayurasem.jpg" alt="pecel" />
+						<figcaption>Sayur Asam Indonesia</figcaption>
+					</figure>
+					<hgroup>
+						<h2>Sayur Asam</h2>
+						<h3>Makanan Berkuah Asam</h3>
+					</hgroup>
+					<p>Sayur asam atau sayur asem adalah masakan sejenis sayur yang khas Indonesia. Ada banyak variasi lokal sayur asam seperti sayur asam Jakarta, sayur asam kangkung, dan sayur asam ikan asin.</p>
+				</article>    
+			</section> <!--tag untuk membuat bagian dalam dokumen-->
+			<aside> <!--tag untuk membuat sebuah konten lain selain dari konten halaman-->
+				<section class="popular-recipes">
+					<h2>Masakan Populer</h2>
+					<a href="#">Sayur Sop</a>
+					<a href="#">Sayur Asem</a>
+					<a href="#">Sayur Lodeh</a>
+					<a href="#">Sayur Bayam</a>
+				</section>
+				<section class="contact-details">
+					<h2>Kontak</h2>
+					<p>Warung Tegal<br />
+						di seluruh indonesia
+				</section>
+		</div><!-- .wrapper -->
+	</body>
+</html> 
