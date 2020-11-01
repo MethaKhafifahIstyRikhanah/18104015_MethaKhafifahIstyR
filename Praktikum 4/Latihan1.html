@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Latihan jQuery 1</title>
+    </head>
+    <body>
+
+        <h1 id="hello">Hello World</h1>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            // jika document sudah ready 
+            $(document).ready(function(){
+                // untuk menampilkan element click pada tag hello 
+                $('#hello').click(function() {
+                    // untuk menyembunyikan objek
+                    $(this).hide();
+                });
+                // untuk menambahkan tag 'p' pada hover
+		$('p').hover(function(){
+            // untuk menyembunyikan objek
+                    $(this).hide();
+                });
+                // untuk menambahkan tag teks pada focus
+		$('#teks').focus(function() {
+                    $(this).css('width','500px');        
+                });
+            });
+        </script>
+    </body>
+</html>
